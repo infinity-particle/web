@@ -1,0 +1,17 @@
+body{
+    background-color: #131925;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+button {
+    background: none;
+    border-color: #FFA260;
+    color: #FFA260;
+    border-width: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+}
