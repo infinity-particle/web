@@ -14,6 +14,7 @@ button {
     border-width: 2px solid;
     padding: 1em 2em;
     font-size: 1em;
+    transition: color 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
 button:hover{
@@ -21,4 +22,5 @@ button:hover{
     color: white;
     box-shadow: 0em 0.5em 0.5em -0.4em #f1ff5c;
     transform: translateY(-0.3em);
+    cursor: pointer;
 }
