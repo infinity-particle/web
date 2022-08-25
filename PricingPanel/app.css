@@ -14,8 +14,24 @@ body {
 .panel {
     background-color: white;
     display: flex;
+    flex-direction: column;
     padding: 2% 5%;
     border-radius: 1em;
     width: 100%;
     max-width: 960px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    width: 100%;
 }
