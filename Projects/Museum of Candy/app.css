@@ -2,3 +2,24 @@ body {
     font-family: Nunito, sans-serif;
     background-color: #F5D9D5;
 }
+
+.navbar {
+    font-weight: 300;
+    font-size: 1.5em;
+    padding: 0.2em 0.2em;
+}
+
+.navbar-brand, .navbar-brand:hover {
+    text-transform: uppercase;
+    color: #EA1C4D;
+    font-size: 1em;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color:white;
+}
+
+.nav-link:hover {
+    color: #EA1C4D;
+}
