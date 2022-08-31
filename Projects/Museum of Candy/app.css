@@ -23,3 +23,7 @@ body {
 .nav-link:hover {
     color: #EA1C4D;
 }
+
+img {
+    width: 100%;
+}
