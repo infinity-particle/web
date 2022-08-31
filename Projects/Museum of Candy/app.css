@@ -24,6 +24,13 @@ body {
     color: #EA1C4D;
 }
 
-img {
-    width: 100%;
+#headerGroup h2 {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#headerGroup span {
+    color: red;
 }
