@@ -24,13 +24,20 @@ body {
     color: #EA1C4D;
 }
 
-#headerGroup h2 {
+#headerGroup h1 {
     color: white;
     text-align: center;
     font-weight: 100;
     text-transform: uppercase;
+    font-size: 2em;
 }
 
 #headerGroup span {
     color: red;
+}
+
+@media (min-width: 1200px) {
+    #headerGroup h1 {
+        font-size: 3em;
+    }
 }
