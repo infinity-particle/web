@@ -41,3 +41,18 @@ body {
         font-size: 3em;
     }
 }
+
+#main-content p {
+    color: #F49BB9;
+    font-weight: 200;
+    padding: 0 20%;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+#main-content h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #EA1C4D;
+    font-size: 2em;
+}
