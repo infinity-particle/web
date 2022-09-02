@@ -24,6 +24,11 @@ body {
     color: #EA1C4D;
 }
 
+.navbar.scrolled {
+    background: rgb(222,192,222);
+    transition: background 500ms;
+}
+
 .blurb {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
