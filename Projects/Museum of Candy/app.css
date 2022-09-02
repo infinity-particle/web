@@ -24,6 +24,11 @@ body {
     color: #EA1C4D;
 }
 
+.blurb {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
 #headerGroup h1 {
     color: white;
     text-align: center;
@@ -36,18 +41,11 @@ body {
     color: red;
 }
 
-@media (min-width: 1200px) {
-    #headerGroup h1 {
-        font-size: 3em;
-    }
-}
-
 #main-content p {
     color: #F49BB9;
     font-weight: 200;
-    padding: 0 20%;
     line-height: 2em;
-    font-size: 1.2em;
+    font-size: 1.125rem;
 }
 
 #main-content h2 {
@@ -55,4 +53,10 @@ body {
     font-weight: 200;
     color: #EA1C4D;
     font-size: 2em;
+}
+
+@media (min-width: 1200px) {
+    #headerGroup h1 {
+        font-size: 3em;
+    }
 }
