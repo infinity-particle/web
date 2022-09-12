@@ -1,8 +1,10 @@
 const msg = "Welcome! Enter your max number:";
 
 let input = null;
-let guess = null;
+let guessInput = null;
+let guessNum = null;
 let attempts = 1;
+let hint = "";
 
 while(!input){
     input = parseInt(prompt(msg));
@@ -12,18 +14,22 @@ while(!input){
 
 const hiddenNumber = Math.round(Math.random() * input);
 
-guess = parseInt(prompt("Enter your first guess:"))
+guessInput = prompt("Enter your first guess:");
+guessNum = parseInt(guessInput);
 
-while(guess !== hiddenNumber){
-    let hint = "";
-    if(guess > hiddenNumber){
+while(guessNum !== hiddenNumber){
+    if(guess === 'q'){
+        break;
+    }
+    else if(guessNum > hiddenNumber){
         hint = "Too high!"
     }
-    else if(guess < hiddenNumber){
+    else if(guessNum < hiddenNumber){
         hint = "Too low!"
     }
 
-    guess = parseInt(prompt(`${hint} Enter a new guess:`))
+    guess = prompt(`${hint} Enter a new guess:`);
+    guessNum = parseInt(guess);
     attempts++;
 }
 
