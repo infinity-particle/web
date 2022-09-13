@@ -1,6 +1,3 @@
-const chooseActionMsg = "What would you like to do?";
-
-const actions = ["new", "list", "delete", "quit"];
 const todoList = [];
 
 let action = null;
@@ -8,7 +5,7 @@ let newTodo = null;
 let isQuit = false;
 
 while(!isQuit){
-    action = prompt(chooseActionMsg);
+    action = prompt("What would you like to do?");
 
     switch(action) {
         case "new":{
@@ -26,9 +23,13 @@ while(!isQuit){
         }break;
 
         case "delete":{
-            let index = prompt("Enter an index to delete:");
-            let deleted = todoList.splice(index, 1);
-            console.log(`Deleted ${deleted}`);
+            const index = parseInt(prompt("Enter an index to delete:"));
+            if(!Number.isNaN(index)){
+                const deleted = todoList.splice(index, 1);
+                console.log(`Deleted ${deleted[0]}`);
+            }else{
+                console.log("Unknown index");
+            }
         }break;
 
         case "quit":{
